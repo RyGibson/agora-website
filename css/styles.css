@@ -1,0 +1,110 @@
+/*-------Contents Begin--------
+Navigation Bar - topnav (. li a)
+
+---------Contents End----------*/
+
+
+.home {
+    width: 100%;
+}
+
+/*--Navbar--*/
+
+.topnav {
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #1D2D5E;     
+    position: relative;
+    margin: 0 auto;
+}
+
+.topnav li {
+    float: left;
+    align-content: center;
+    margin-right: 50px;
+    float: right; 
+}
+
+.topnav a {
+    color: #ffffff;
+    font-family: "Hind";
+    font-size: 19px;
+    text-decoration: none;
+}
+
+.topnav .beta{
+    color: #1D2D5E;
+    text-align: center;
+}
+
+.topnav .beta-li{
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 5px;
+    width: 110px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/*
+li.beta{
+    width: 200px;
+}
+*/
+
+/*Horizontal page breaks*/
+.style-break {
+    height: 4px;
+    width: 100%;
+    background-image: linear-gradient(to right, #15DEF2, #6750DD);
+    position: relative;
+}
+
+/*-- Home Page Hero Styles --*/
+
+.title {
+    font-family: "Hind";
+    font-weight: 550;
+    /* color: linear-gradient(to right, #15DEF2, #6750DD); */
+    font-size: 78px;
+    margin: 25px 0 0 5%;
+}
+
+.hero-heading {
+    font-family: "Hind";
+    font-weight: 400;
+    font-size: 32px;
+    margin: 0 0 0 5%;
+    color: #283583;
+}
+
+.hero-button-div {
+    margin: 5% 0 15% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.get-in-touch {
+    /*Font*/
+    font-size: 20px;
+    font-family: "Hind";    
+    color: #ffffff;
+    border: none;
+    /*Size and shape*/
+    border-radius: 10px;
+    width: 350px;
+    height: 40px;
+    /*Style*/
+    background-color: #1D2D5E;
+    /*Placement*/
+}
+
+/*--Home Page Section Headings*/
+
+.h2-accent {
+    color: #15DEF2;
+}
