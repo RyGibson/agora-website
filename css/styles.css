@@ -2,14 +2,18 @@
 Navigation Bar - topnav (. li a)
 
 ---------Contents End----------*/
-
+body {
+    margin: 0 0 0 0;
+}
 
 .home {
     width: 100%;
+    margin: 0 0 0 0;
+    background-image: url('../images/Background.png');
+    background-clip: border-box;
 }
 
 /*--Navbar--*/
-
 .topnav {
     width: 100%;
     height: 40px;
@@ -21,39 +25,37 @@ Navigation Bar - topnav (. li a)
     margin: 0 auto;
 }
 
-.topnav li {
-    float: left;
-    align-content: center;
-    margin-right: 50px;
-    float: right; 
+.nav-list {
+    position: relative;
 }
 
-.topnav a {
+.nav-list li {
+    float: left;
+    align-content: center;
+    margin: 5px 50px 0 0;
+    float: right;
+    text-align: center; 
+}
+
+.nav-list a {
     color: #ffffff;
     font-family: "Hind";
     font-size: 19px;
     text-decoration: none;
 }
 
-.topnav .beta{
+.nav-list .beta{ /*"Beta Login Text*/
     color: #1D2D5E;
     text-align: center;
 }
 
-.topnav .beta-li{
-    border-style: solid;
-    border-color: #ffffff;
+.nav-list .beta-li{/*"Beta Login <li> container*/
     border-radius: 5px;
     width: 110px;
     background-color: #ffffff;
     text-align: center;
+    margin-right: 25px;
 }
-
-/*
-li.beta{
-    width: 200px;
-}
-*/
 
 /*Horizontal page breaks*/
 .style-break {
@@ -82,7 +84,7 @@ li.beta{
 }
 
 .hero-button-div {
-    margin: 5% 0 15% 0;
+    margin: 10% 0 10% 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,7 +98,7 @@ li.beta{
     border: none;
     /*Size and shape*/
     border-radius: 10px;
-    width: 350px;
+    padding: 0 30px 0 30px;
     height: 40px;
     /*Style*/
     background-color: #1D2D5E;
@@ -105,6 +107,77 @@ li.beta{
 
 /*--Home Page Section Headings*/
 
-.h2-accent {
+.h-accent {
     color: #15DEF2;
+}
+
+h3 {
+    /*Style*/
+    font-family: "Hind";
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 26px;
+    /*Size and Position*/
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 26px;
+    position: relative;
+    margin: 0 0 0 0;
+}
+
+.section-header {
+    /*Style */
+    background-color: #1D2D5E;
+    /*Size and Position*/
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 26px 0 0 0;
+}
+
+.half-header {
+    /*Style */
+    background-color: #1D2D5E;
+    /*Size and Position*/
+    width: 50%;
+    margin: 0 0 0 0;
+    padding: 26px 0 0 0;
+    display: inline-block;
+}
+
+.half-header-img {
+    /*Style */
+    background-color: #ffffff;
+    /*Size and Position*/
+    width: 49%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: inline-block;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    */
+    background-image: url('../images/Background.png');
+}
+
+img .img-computer {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-image: url('../images/Background.png');
+}
+
+.content-holder {
+    width: 100%;
+    height: 200px;
+}
+
+.bg-devices {
+    width: 100%;
+    margin: 0 0 0 0;
+    background-image: url('../images/bg-devices.PNG');
+    /*background-clip:*/ 
+    background-size: 100%;
+    min-height: 56%; /*calculated based on 3000px by 1680*/
+    max-height: 56%;
 }
