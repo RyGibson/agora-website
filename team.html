@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agora</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/teamstyles.css">
+        <link rel="stylesheet" href="css/mediaqueries.css">
+        <link href="https://fonts.googleapis.com/css?family=Hind:400,500,600,700" rel="stylesheet" type="text/css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.2.1/vue-resource.min.js"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-113676867-1');
+        </script>
+    </head>
+    <body>
+        <div class="topnav">
+            <div class="nav-list">
+                <li class="beta-li"><a class="beta" href="beta.html">Beta Login</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="team.html">Team</a></li>
+                <li><a href="index.html">Home</a></li>
+            </div>
+        </div>
+        <div class="style-break"></div>
+
+        <div :class="['container', isSelected ? 'container-selected':'', isReady ? 'container-ready':'']" id="app">
+            <div class="team-container">
+                <div class="header">
+                    <h2 class="header-title">Our Executive Team</h2>
+                </div>
+                <div class="person-list">
+                    <div class="person person-position" v-for="(person,index) in persons">
+                        <div class="person-img-cropper">
+                            <img class="person-img" :src="person.photo">
+                        </div>
+                        <div class="person-details">
+                            <h2 class="person-title">{{person.name}}</h2>
+                            <a class="person-desc" v-bind:href="person.social.linkedin" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-detail">
+                <div class="team-detail-inner" v-if="isOk">
+                    <div class="team-detail-left" :style=`background-image:url(${selectedPersonData.photo})`>
+                        <div class="team-detail-photo">
+                            <img :src="selectedPersonData.photo" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/teampage.js"></script>
+</html>
